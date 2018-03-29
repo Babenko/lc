@@ -8,7 +8,7 @@ import java.util.Set;
  */
 public class UniqueMorseCodeWords {
 
-  private static final int CHARACTER_OFFSET = 96;
+  private static final int CHARACTER_OFFSET = 97;
 
   private String[] morseAlphabet =
       {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--",
