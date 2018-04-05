@@ -6,6 +6,6 @@ package com.sbabenko.lc.t461;
 public class HammingDistance {
 
   public int hammingDistance(int x, int y) {
-    return 0;
+    return x ^ y;
   }
 }
