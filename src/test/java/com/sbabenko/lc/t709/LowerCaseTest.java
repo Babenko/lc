@@ -22,4 +22,14 @@ class LowerCaseTest {
     assertEquals(lower, result);
   }
 
+  @ParameterizedTest
+  @ValueSource(strings = {"Super CAR", "Red Dress", "Cool worD"})
+  void wordsToLowerCase(String words) {
+
+    String lower = words.toLowerCase();
+    String result = wordCase.toLowerCase(words);
+
+    assertEquals(lower, result);
+  }
+
 }
