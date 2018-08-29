@@ -16,8 +16,8 @@ class LowerCaseTest {
   @ValueSource(strings = {"CAR", "Red", "worD"})
   void wordToLowerCase(String word) {
 
-    String lower = word.toLowerCase();
-    String result = wordCase.toLowerCase(word);
+    var lower = word.toLowerCase();
+    var result = wordCase.toLowerCase(word);
 
     assertEquals(lower, result);
   }
@@ -26,8 +26,8 @@ class LowerCaseTest {
   @ValueSource(strings = {"Super CAR", "Red Dress", "Cool worD"})
   void wordsToLowerCase(String words) {
 
-    String lower = words.toLowerCase();
-    String result = wordCase.toLowerCase(words);
+    var lower = words.toLowerCase();
+    var result = wordCase.toLowerCase(words);
 
     assertEquals(lower, result);
   }
