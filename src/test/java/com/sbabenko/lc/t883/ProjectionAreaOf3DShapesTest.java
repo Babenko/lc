@@ -28,6 +28,10 @@ class ProjectionAreaOf3DShapesTest {
 
     private static Stream<Arguments> shapes() {
         return Stream.of(
-                Arguments.of((Object)new int[][]{{1, 2},{3, 4}}, 17));
+                Arguments.of((Object)new int[][]{{1, 2},{3, 4}}, 17),
+                Arguments.of((Object)new int[][]{{2}}, 5),
+                Arguments.of((Object)new int[][]{{1, 0}, {0, 2}}, 8),
+                Arguments.of((Object)new int[][]{{1, 1, 1}, {1, 0, 1}, {1, 1, 1}}, 14),
+                Arguments.of((Object)new int[][]{{2, 2, 2}, {2, 1, 2}, {2, 2, 2}}, 21));
     }
 }
