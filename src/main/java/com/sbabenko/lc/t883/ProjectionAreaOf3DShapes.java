@@ -7,11 +7,6 @@ public class ProjectionAreaOf3DShapes {
 
     public int projectionArea(int[][] grid) {
 
-        int[][] arr = new int[2][];
-        arr[0] = new int[5];
-        arr[1] = new int[15];
-        
-
         int result = 0;
         List<Tuple<Integer, Integer, Integer>> points = new ArrayList<>();
         for(int x = 0; x < grid.length; x++) {
